@@ -1,5 +1,12 @@
 <script>
-
+export default{
+  name: "Shop",
+  data() {
+    return {
+    
+    }
+  }
+}
 
 </script>
 
@@ -33,7 +40,7 @@
 <style lang="scss" scoped>
     .container{
         background-color: #0282f9;
-        min-height: 140px;
+        min-height: 120px;
         display: flex;
         justify-content: center;
 
@@ -43,7 +50,7 @@
     }
 
     .row{
-        width: 75%;
+        width: 80%;
         display: flex;
         justify-content: space-between;
     }

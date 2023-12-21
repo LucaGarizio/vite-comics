@@ -1,5 +1,6 @@
 <script>
 export default{
+  name: "AppHeader",
   data() {
     return {
     menuNav: [
@@ -88,6 +89,10 @@ export default{
 
 
 <style lang="scss" scoped>
+// @use'.styles/partials/variables' as *;
+// @use '.styles/general/scss' as *; 
+
+
   nav{
     background-color: #fff;
   }

@@ -1,6 +1,12 @@
 <script>
-
-
+export default{
+  name: "Social",
+  data() {
+    return {
+    
+    }
+  }
+}
 </script>
 
 <template>
@@ -30,7 +36,6 @@
 footer{
     background-color: #303030;
 }
-
 .row{
     width: 80%;
     margin: 0 auto;
@@ -40,7 +45,6 @@ footer{
     justify-content: space-between;
     margin-bottom: 20px;
 }
-
 .sign-in-col{
     border: 1px solid #0089ff;
 
@@ -49,11 +53,11 @@ footer{
         color: white;
     }
 }
-
 .icons-col{
     display: flex;
     justify-content: center;
     align-items: center;
+    
         h4{
             color: #0089ff;
             margin-right: 10px;

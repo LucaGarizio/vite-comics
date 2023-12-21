@@ -1,5 +1,5 @@
 <script>
-import Header from './components/Header.vue'
+import AppHeader from './components/AppHeader.vue'
 import MainContent from './components/MainContent.vue'
 import Shop from './components/Shop.vue'
 import Info from './components/Info.vue'
@@ -7,7 +7,7 @@ import Social from './components/Social.vue'
 
 export default{
     components:{
-        Header,
+        AppHeader,
         MainContent,
         Shop,
         Info,
@@ -18,7 +18,7 @@ export default{
 
 <template>
     <header>
-        <Header/>
+        <AppHeader/>
     </header>
 
     <main>
@@ -41,6 +41,8 @@ export default{
 </template>
 
 <style lang="scss">
+// @use'.styles/partials/variables' as *;
+// @use '.styles/general/scss' as *; 
 *{
     margin: 0;
     padding: 0;

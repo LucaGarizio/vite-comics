@@ -1,5 +1,12 @@
 <script>
-
+export default{
+  name: "Info",
+  data() {
+    return {
+    
+    }
+  }
+}
 </script>
 
 <template>
@@ -128,7 +135,11 @@
             
             a{
                 text-decoration: none;
-                color: #6e6e65; 
+                color: #6e6e65;
+
+                &:hover{
+                    color: #fff;
+                }
             }
         }
     }
