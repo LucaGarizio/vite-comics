@@ -2,12 +2,16 @@
 import Header from './components/Header.vue'
 import MainContent from './components/MainContent.vue'
 import Shop from './components/Shop.vue'
+import Info from './components/Info.vue'
+import Social from './components/Social.vue'
 
 export default{
     components:{
         Header,
         MainContent,
-        Shop
+        Shop,
+        Info,
+        Social
     }
 }
 </script>
@@ -25,12 +29,14 @@ export default{
 
         <!-- section shop -->
         <section>
-            <Shop/>ß
+            <Shop/>
         </section>
     </main>
 
     <footer>
+        <Info/>
 
+        <Social/>
     </footer>
 </template>
 
