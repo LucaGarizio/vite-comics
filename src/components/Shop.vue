@@ -33,10 +33,9 @@
 <style lang="scss" scoped>
     .container{
         background-color: #0282f9;
-        min-height: 170px;
+        min-height: 140px;
         display: flex;
         justify-content: center;
-        align-items: center;
 
         h4{
             color: white;
@@ -44,8 +43,9 @@
     }
 
     .row{
-        width: 70%;
+        width: 75%;
         display: flex;
+        justify-content: space-between;
     }
 
     .box-container{
@@ -54,12 +54,12 @@
         align-items: center;
 
         img{
-            width: 60px;
+            width: 50px;
             margin-right: 10px;
         }
 
         .shrink{
-            width: 45px;
+            width: 40px;
         }
     }
 </style>

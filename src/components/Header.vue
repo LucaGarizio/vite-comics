@@ -13,34 +13,34 @@
       <div class="nav-col">
         <ul>
           <li>
-            <a href="#">Characters</a>
+            <a href="#">CHARACTERS</a>
           </li>
           <li>
-            <a href="">comics</a>
+            <a href="">COMICS</a>
           </li>
           <li>
-            <a href="">movies</a>
+            <a href="">MOVIES</a>
           </li>
           <li>
-            <a href="">tv</a>
+            <a href="">TV</a>
           </li>
           <li>
-            <a href="">games</a>
+            <a href="">GAMES</a>
           </li>
           <li>
-            <a href="">collectibles</a>
+            <a href="">COLLECTIBLES</a>
           </li>
           <li>
-            <a href="">videos</a>
+            <a href="">VIDEOS</a>
           </li>
           <li>
-            <a href="">fans</a>
+            <a href="">FANS</a>
           </li>
           <li>
-            <a href="">news</a>
+            <a href="">NEWS</a>
           </li>
           <li>
-            <a href="">shop</a>
+            <a href="">SHOP</a>
           </li>
         </ul>
       </div>
@@ -55,25 +55,22 @@
   .row{
     margin: 0 auto;
     margin-top: 20px;
-    height: 130px;
-   
-    border: 1px solid white;
+    height: 100px;
+    width: 80%;
     display: flex;
+    justify-content: space-between;
   }
   .logo-col{
-    width: 20%;
     display: flex;
-    justify-content: end;
     align-items: center;
 
     img{
-      width: 90px;
+      width: 70px;
     }
   }
   .nav-col{
-    width: 80%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 
     ul{
@@ -87,6 +84,7 @@
         a{
           text-decoration: none;
           color: #333;
+          font-size: 13px;
 
           &:hover{
             color: #0077f8;
