@@ -49,10 +49,14 @@
 </template>
 
 <style lang="scss" scoped>
+  nav{
+    background-color: #fff;
+  }
   .row{
+    margin: 0 auto;
     margin-top: 20px;
     height: 130px;
-    background-color: #fff;
+   
     border: 1px solid white;
     display: flex;
   }

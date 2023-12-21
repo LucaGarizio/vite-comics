@@ -1,15 +1,37 @@
 <script>
 import Header from './components/Header.vue'
+import MainContent from './components/MainContent.vue'
+import Shop from './components/Shop.vue'
 
 export default{
     components:{
-        Header
+        Header,
+        MainContent,
+        Shop
     }
 }
 </script>
 
 <template>
-    <Header/>
+    <header>
+        <Header/>
+    </header>
+
+    <main>
+        <!-- main content -->
+        <section>
+            <MainContent/>
+        </section>
+
+        <!-- section shop -->
+        <section>
+            <Shop/>ß
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
 </template>
 
 <style lang="scss">
