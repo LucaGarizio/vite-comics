@@ -1,5 +1,68 @@
 <script>
-
+export default{
+  data() {
+    return {
+    menuNav: [
+        { 
+          text: 'CHARACTERS',
+          href: '#',
+          active: true 
+        },
+        { 
+          text: 'COMICS',
+          href: '#', 
+          active: false 
+        },
+        { 
+          text: 'MOVIES', 
+          href: '#', 
+          active: false 
+        },
+        {
+          text: 'TV', 
+          href: '#', 
+          active: false 
+        },
+        { 
+          text: 'GAMES', 
+          href: '#', 
+          active: false 
+        },
+        { 
+          text: 'COLLECTIBLES',
+          href: '#', 
+          active: false 
+        },
+        { 
+          text: 'VIDEOS', 
+          href: '#', 
+          active: false 
+        },
+        { 
+          text: 'FANS', 
+          href: '#', 
+          active: false 
+        },
+        { 
+          text: 'NEWS', 
+          href: '#', 
+          active: false 
+        },
+        { 
+          text: 'SHOP', 
+          href: '#', 
+          active: false 
+        }
+      ],
+      active: 0
+    };
+  },
+  methods: {
+    activeVoice(index){
+      this.active = index;
+    }
+  }
+}
 
 </script>
 
@@ -12,41 +75,17 @@
 
       <div class="nav-col">
         <ul>
-          <li>
-            <a href="#">CHARACTERS</a>
-          </li>
-          <li>
-            <a href="">COMICS</a>
-          </li>
-          <li>
-            <a href="">MOVIES</a>
-          </li>
-          <li>
-            <a href="">TV</a>
-          </li>
-          <li>
-            <a href="">GAMES</a>
-          </li>
-          <li>
-            <a href="">COLLECTIBLES</a>
-          </li>
-          <li>
-            <a href="">VIDEOS</a>
-          </li>
-          <li>
-            <a href="">FANS</a>
-          </li>
-          <li>
-            <a href="">NEWS</a>
-          </li>
-          <li>
-            <a href="">SHOP</a>
+          <li v-for="(voices, index) in menuNav" :key="index" @click="activeVoice(index)">
+            <a :class="index === active ? 'active' : ''" :href="voices.href">{{voices.text}}</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 </template>
+
+
+
 
 <style lang="scss" scoped>
   nav{
@@ -72,25 +111,28 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-
+    
     ul{
       list-style-type: none;
       display: flex;
     }
-
-      li{
-        margin: 0 20px;
-
-        a{
-          text-decoration: none;
-          color: #333;
-          font-size: 13px;
-
-          &:hover{
-            color: #0077f8;
-          }
+    
+    li{
+      margin: 0 20px;
+      
+      a{
+        text-decoration: none;
+        color: #436787;
+        font-size: 13px;
+        
+        &:hover {
+          color: #2a7ff8;
         }
       }
-  }
-
+    }
+  }    
+    
+    .active{
+      color: #2a7ff8 !important;
+    }
 </style>
