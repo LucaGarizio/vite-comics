@@ -1,11 +1,6 @@
 <script>
 export default{
   name: "Shop",
-  data() {
-    return {
-    
-    }
-  }
 }
 
 </script>
@@ -38,15 +33,15 @@ export default{
 </template>
 
 <style lang="scss" scoped>
+@use'../styles/partials/variables' as *;
+@use '../styles/partials/mixins' as *; 
+
+
     .container{
         background-color: #0282f9;
         min-height: 120px;
         display: flex;
         justify-content: center;
-
-        h4{
-            color: white;
-        }
     }
 
     .row{
@@ -56,7 +51,7 @@ export default{
     }
 
     .box-container{
-        margin: 0 30px;
+        margin: 0 40px;
         display: flex;
         align-items: center;
 

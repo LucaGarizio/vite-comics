@@ -1,5 +1,6 @@
 <script>
-import AppHeader from './components/AppHeader.vue'
+import NavBar from './components/Navbar.vue'
+import Jumbo from './components/Jumbo.vue'
 import MainContent from './components/MainContent.vue'
 import Shop from './components/Shop.vue'
 import Info from './components/Info.vue'
@@ -7,7 +8,8 @@ import Social from './components/Social.vue'
 
 export default{
     components:{
-        AppHeader,
+        NavBar,
+        Jumbo,
         MainContent,
         Shop,
         Info,
@@ -18,7 +20,8 @@ export default{
 
 <template>
     <header>
-        <AppHeader/>
+        <NavBar/>
+        <Jumbo />
     </header>
 
     <main>
@@ -34,22 +37,25 @@ export default{
     </main>
 
     <footer>
-        <Info/>
+        <section>
+            <Info/>
+        </section>
 
-        <Social/>
+        <section>
+            <Social/>
+        </section>
     </footer>
 </template>
 
 <style lang="scss">
-// @use'.styles/partials/variables' as *;
-// @use '.styles/general/scss' as *; 
+@use './styles/partials/variables' as *;
+@use './styles/general.scss' as *; 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
     body{
-        background-color: black;
+        background-color: #333;
     }
 </style>

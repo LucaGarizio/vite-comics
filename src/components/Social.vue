@@ -14,17 +14,29 @@ export default{
     <div class="container">
         <div class="row">
             <div class="sign-in-col">
-                <h4>SIGN-UP NOW!</h4>
+                <a href="#">
+                    <h4>SIGN-UP NOW!</h4>
+                </a>
             </div>
 
             <div class="icons-col">
                 <h4>FOLLOW US</h4>
                 <div class="icons">
-                    <img src="../assets/img/footer-facebook.png" alt="">
-                    <img src="../assets/img/footer-twitter.png" alt="">
-                    <img src="../assets/img/footer-youtube.png" alt="">
-                    <img src="../assets/img/footer-pinterest.png" alt="">
-                    <img src="../assets/img/footer-periscope.png" alt="">
+                    <a href="#">
+                        <img src="../assets/img/footer-facebook.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="../assets/img/footer-twitter.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="../assets/img/footer-youtube.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="../assets/img/footer-pinterest.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="../assets/img/footer-periscope.png" alt="">
+                    </a>
                 </div>
             </div>
         </div>
@@ -33,9 +45,9 @@ export default{
 </template>
 
 <style lang="scss" scoped>
-footer{
-    background-color: #303030;
-}
+@use'../styles/partials/variables' as *;
+@use '../styles/partials/mixins' as *; 
+
 .row{
     width: 80%;
     margin: 0 auto;
@@ -43,14 +55,12 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 20px;
 }
 .sign-in-col{
     border: 1px solid #0089ff;
 
     h4{
         padding: 15px;
-        color: white;
     }
 }
 .icons-col{
@@ -58,14 +68,14 @@ footer{
     justify-content: center;
     align-items: center;
     
-        h4{
-            color: #0089ff;
-            margin-right: 10px;
-            
-        }
-            img{
-                width: 30px;
-                margin-left: 15px;
-            }
+    h4{
+        color: #0089ff;
+        margin-right: 10px;    
+    }
+
+    img{
+        width: 30px;
+        margin-left: 15px;
+    }
 }
 </style>

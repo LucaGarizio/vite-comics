@@ -1,6 +1,6 @@
 <script>
 export default{
-  name: "AppHeader",
+  name: "NavBar",
   data() {
     return {
     menuNav: [
@@ -55,7 +55,7 @@ export default{
           active: false 
         }
       ],
-      active: 0
+      active: 1
     };
   },
   methods: {
@@ -64,8 +64,8 @@ export default{
     }
   }
 }
-
 </script>
+
 
 <template>
   <nav>
@@ -86,11 +86,9 @@ export default{
 </template>
 
 
-
-
 <style lang="scss" scoped>
-// @use'.styles/partials/variables' as *;
-// @use '.styles/general/scss' as *; 
+@use'../styles/partials/variables' as *;
+@use '../styles/partials/mixins' as *; 
 
 
   nav{
@@ -98,7 +96,6 @@ export default{
   }
   .row{
     margin: 0 auto;
-    margin-top: 20px;
     height: 100px;
     width: 80%;
     display: flex;
@@ -137,7 +134,7 @@ export default{
     }
   }    
     
-    .active{
-      color: #2a7ff8 !important;
-    }
+.active{
+  color: #2a7ff8 !important;
+}
 </style>
