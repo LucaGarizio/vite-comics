@@ -93,6 +93,7 @@ export default{
 <template>
     <div class="row">
         <CardBoxes v-for="(card, i) in cards" :key="i" :details="card" />
+        <button><h4>Load More</h4></button>
     </div>
 </template>
 
@@ -108,7 +109,19 @@ export default{
         justify-content: center;
         align-items: center;
         width: 85%;
-        margin: 70px auto;
-        flex-wrap: wrap;     
+        margin: 70px auto 20px;
+        flex-wrap: wrap;   
+        
+        button{
+            margin-top: 50px;
+            width: 200px;
+            background-color: #0282f9;
+            border: none;
+            cursor: pointer;
+        }
+
+        h4{
+            padding: 10px;
+        }
     }
 </style>
